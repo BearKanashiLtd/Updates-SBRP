@@ -12,6 +12,6 @@ jobs:
       - name: Send message to Discord
         uses: peter-evans/discord-webhook-action@v1
         with:
-          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          webhook-url: ${{ https://discord.com/api/webhooks/1355820221260370031/fyJ0QNPYrXWdPgIlrJFco-eVZ1Cajim4w1cZa-lAQqFfryhAT5aTO5GpLL3cIpOCAB4g }}
           message: 'El archivo README ha sido actualizado.'
 
