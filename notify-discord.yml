@@ -1,0 +1,17 @@
+name: Notify Discord on README change
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  discord_notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send message to Discord
+        uses: peter-evans/discord-webhook-action@v1
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: 'El archivo README ha sido actualizado.'
+
